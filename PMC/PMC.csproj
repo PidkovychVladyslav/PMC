@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collector.cs" />
-    <Compile Include="Point.cs" />
     <Compile Include="Collections.cs" />
+    <Compile Include="PointModels\IPoint.cs" />
+    <Compile Include="PointModels\Point1D.cs" />
+    <Compile Include="PointModels\Point2D.cs" />
+    <Compile Include="PointModels\Point3D.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

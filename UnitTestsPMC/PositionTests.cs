@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PMC;
+using PMC.PointModels;
 
 namespace UnitTestsPMC
 {
