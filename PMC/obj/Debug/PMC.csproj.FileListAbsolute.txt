@@ -4,3 +4,9 @@ c:\users\blues\documents\visual studio 2015\Projects\PMC\PMC\bin\Debug\PMC.pdb
 c:\users\blues\documents\visual studio 2015\Projects\PMC\PMC\obj\Debug\PMC.csprojResolveAssemblyReference.cache
 c:\users\blues\documents\visual studio 2015\Projects\PMC\PMC\obj\Debug\PMC.exe
 c:\users\blues\documents\visual studio 2015\Projects\PMC\PMC\obj\Debug\PMC.pdb
+C:\Users\Blues\Source\Repos\PMC\PMC\bin\Debug\PMC.exe.config
+C:\Users\Blues\Source\Repos\PMC\PMC\obj\Debug\PMC.exe
+C:\Users\Blues\Source\Repos\PMC\PMC\obj\Debug\PMC.pdb
+C:\Users\Blues\Source\Repos\PMC\PMC\bin\Debug\PMC.exe
+C:\Users\Blues\Source\Repos\PMC\PMC\bin\Debug\PMC.pdb
+C:\Users\Blues\Source\Repos\PMC\PMC\obj\Debug\PMC.csprojResolveAssemblyReference.cache

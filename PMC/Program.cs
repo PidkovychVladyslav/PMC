@@ -31,6 +31,18 @@ namespace PMC
                     item[i].Print();
                 }
             }
+            Matrix<int> matrix = new Matrix<int>();
+            Position<int> position = new Position<int>();
+
+            for (int i = 0; i < 100; i++)
+            {
+                for (int j = 0; j < 100; j++)
+                {
+                    position.Add(new Point2D<int>(i, j));
+                }
+                matrix.Add(position);
+            }
+            Console.WriteLine(matrix.Count);
         }
     }
 }

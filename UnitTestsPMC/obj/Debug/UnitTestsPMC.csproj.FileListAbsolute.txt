@@ -7,3 +7,10 @@ C:\Users\Blues\Documents\Visual Studio 2015\Projects\PMC\UnitTestsPMC\bin\Debug\
 C:\Users\Blues\Documents\Visual Studio 2015\Projects\PMC\UnitTestsPMC\obj\Debug\UnitTestsPMC.csprojResolveAssemblyReference.cache
 C:\Users\Blues\Documents\Visual Studio 2015\Projects\PMC\UnitTestsPMC\obj\Debug\UnitTestsPMC.dll
 C:\Users\Blues\Documents\Visual Studio 2015\Projects\PMC\UnitTestsPMC\obj\Debug\UnitTestsPMC.pdb
+C:\Users\Blues\Source\Repos\PMC\UnitTestsPMC\bin\Debug\UnitTestsPMC.dll
+C:\Users\Blues\Source\Repos\PMC\UnitTestsPMC\bin\Debug\UnitTestsPMC.pdb
+C:\Users\Blues\Source\Repos\PMC\UnitTestsPMC\bin\Debug\PMC.exe
+C:\Users\Blues\Source\Repos\PMC\UnitTestsPMC\bin\Debug\PMC.pdb
+C:\Users\Blues\Source\Repos\PMC\UnitTestsPMC\obj\Debug\UnitTestsPMC.csprojResolveAssemblyReference.cache
+C:\Users\Blues\Source\Repos\PMC\UnitTestsPMC\obj\Debug\UnitTestsPMC.dll
+C:\Users\Blues\Source\Repos\PMC\UnitTestsPMC\obj\Debug\UnitTestsPMC.pdb
