@@ -15,11 +15,5 @@ namespace PMC.PointModels
         /// Prints coordinates.
         /// </summary>
         void Print();
-
-        /// <summary>
-        /// Returns type of coordinates
-        /// </summary>
-        /// <returns></returns>
-        Type GenericType();
     }
 }

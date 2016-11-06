@@ -53,15 +53,6 @@ namespace PMC.PointModels
         }
 
         /// <summary>
-        /// Returns type of coordinates
-        /// </summary>
-        /// <returns></returns>
-        public Type GenericType()
-        {
-            return x.GetType();
-        }
-
-        /// <summary>
         /// Prints 3-dimensional point coordinates.
         /// </summary>
         public void Print()
