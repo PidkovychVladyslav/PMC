@@ -20,7 +20,6 @@ namespace PMC
             pos.Add(p);
             c.Add(p);
             c.Add(p3);
-            //// c.Add(p2);
             c1.Add(p3);
             c1.Add(p3);
             m.Add(c);
