@@ -1,32 +1,32 @@
 ﻿using PMC.Collections;
-using PMC.Creator;
 using PMC.PointModels;
 using System;
 
 namespace PMC
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            //Creator<Collector<int>> cr = new PositionCreator<int>();
-            //Position<int> pos = cr.Create();
-            //Position<int> pos = new PositionCreator<int>().Create();
-            Point3D<int> p = new Point3D<int>(3,2,1);
+            Creator cr = new Creator();
+            Position<int> pos = cr.Create<Position<int>>();
+            Matrix<int> matr = cr.Create<Matrix<int>>();
+            Point3D<int> p = new Point3D<int>(3, 2, 1);
             Point3D<int> p3 = new Point3D<int>(1, 2, 3);
             Position<int> c = new Position<int>();
             Position<int> c1 = new Position<int>();
             Point1D<double> p2 = new Point1D<double>(2.0);
             Matrix<int> m = new Matrix<int>();
+            pos.Add(p);
             c.Add(p);
             c.Add(p3);
-            //c.Add(p2);
+            //// c.Add(p2);
             c1.Add(p3);
             c1.Add(p3);
             m.Add(c);
             m.Add(c1);
             c.Contains(p);
-            foreach(var item in m)
+            foreach (var item in m)
             {
                 for (int i = 0; i < item.Count; i++)
                 {

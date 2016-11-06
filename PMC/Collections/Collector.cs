@@ -20,8 +20,7 @@ namespace PMC.Collections
         /// </summary>
         public Collector()
         {
-            //this.collector = new List<T>();
-            this.Create();
+            this.collector = new List<T>();
         }
 
         /// <summary>
@@ -64,8 +63,6 @@ namespace PMC.Collections
         /// </summary>
         /// <param name="item">Object to add into collection <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
         public abstract void Add(T item);
-
-        public abstract void Create();
 
         /// <summary>
         /// Deletes all elements from collection <see cref="T:System.Collections.Generic.ICollection`1" />.

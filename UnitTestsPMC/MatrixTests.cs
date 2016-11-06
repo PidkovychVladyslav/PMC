@@ -22,7 +22,7 @@ namespace UnitTestsPMC
                 position = new Position<int>();
                 for (int j = 0; j < 100; j++)
                 {
-                    position.Add(new Point2D<int>(i,j));
+                    position.Add(new Point2D<int>(i, j));
                 }
 
                 matrix.Add(position);

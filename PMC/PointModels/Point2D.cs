@@ -17,7 +17,6 @@ namespace PMC.PointModels
 
         private readonly T y;
 
-
         /// <summary>
         /// Initializes a new instance of 2-dimensional point with x.
         /// </summary>

@@ -48,8 +48,7 @@
     <Compile Include="Collections\Containers.cs" />
     <Compile Include="Collections\Matrix.cs" />
     <Compile Include="Collections\Position.cs" />
-    <Compile Include="Creator\Creator.cs" />
-    <Compile Include="Creator\PositionCreator.cs" />
+    <Compile Include="Creator.cs" />
     <Compile Include="PointModels\IPoint.cs" />
     <Compile Include="PointModels\Point1D.cs" />
     <Compile Include="PointModels\Point2D.cs" />

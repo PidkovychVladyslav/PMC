@@ -34,13 +34,5 @@ namespace PMC.Collections
                 collector.Add(item);
             }
         }
-
-        /// <summary>
-        /// Creates collection of Positions.
-        /// </summary>
-        public override void Create()
-        {
-            collector = new List<Position<T>>();
-        }
     }
 }

@@ -33,13 +33,5 @@ namespace PMC.Collections
                 collector.Add(item);
             }
         }
-
-        /// <summary>
-        /// Creates collection of Matrixes.
-        /// </summary>
-        public override void Create()
-        {
-            collector = new List<Matrix<T>>();
-        }
     }
 }

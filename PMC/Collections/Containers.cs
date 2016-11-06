@@ -33,13 +33,5 @@ namespace PMC.Collections
                 collector.Add(item);
             }
         }
-
-        /// <summary>
-        /// Creates collection of Containers.
-        /// </summary>
-        public override void Create()
-        {
-            collector = new List<Container<T>>();
-        }
     }
 }
