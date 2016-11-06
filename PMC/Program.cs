@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PMC.Collections;
+using PMC.Creator;
+using PMC.PointModels;
+using System;
 
 namespace PMC
 {
@@ -10,6 +9,9 @@ namespace PMC
     {
         static void Main(string[] args)
         {
+            //Creator<Collector<int>> cr = new PositionCreator<int>();
+            //Position<int> pos = cr.Create();
+            //Position<int> pos = new PositionCreator<int>().Create();
             Point3D<int> p = new Point3D<int>(3,2,1);
             Point3D<int> p3 = new Point3D<int>(1, 2, 3);
             Position<int> c = new Position<int>();
@@ -26,11 +28,12 @@ namespace PMC
             c.Contains(p);
             foreach(var item in m)
             {
-                for(int i = 0; i< item.Count; i++)
+                for (int i = 0; i < item.Count; i++)
                 {
                     item[i].Print();
                 }
             }
+
             Matrix<int> matrix = new Matrix<int>();
             Position<int> position = new Position<int>();
 
@@ -40,8 +43,10 @@ namespace PMC
                 {
                     position.Add(new Point2D<int>(i, j));
                 }
+
                 matrix.Add(position);
             }
+
             Console.WriteLine(matrix.Count);
         }
     }

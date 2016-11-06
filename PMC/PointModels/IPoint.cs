@@ -9,8 +9,17 @@ namespace PMC.PointModels
     /// <summary>
     /// Generic interface of point
     /// </summary>
-    public interface IPoint
+    public interface IPoint<T>
     {
+        /// <summary>
+        /// Prints coordinates.
+        /// </summary>
         void Print();
+
+        /// <summary>
+        /// Returns type of coordinates
+        /// </summary>
+        /// <returns></returns>
+        Type GenericType();
     }
 }

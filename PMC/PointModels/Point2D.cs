@@ -11,7 +11,7 @@ namespace PMC.PointModels
     /// </summary>
     /// <typeparam name="T">Takes any numerical types</typeparam>
     /// <seealso cref="PMC.IPoint" />
-    public class Point2D<T> : IPoint where T : struct, IComparable, IFormattable, IConvertible, IComparable<T>, IEquatable<T>
+    public class Point2D<T> : IPoint<T> where T : struct, IComparable, IFormattable, IConvertible, IComparable<T>, IEquatable<T>
     {
         private readonly T x;
 
@@ -39,11 +39,20 @@ namespace PMC.PointModels
         }
 
         /// <summary>
+        /// Returns type of coordinates
+        /// </summary>
+        /// <returns></returns>
+        public Type GenericType()
+        {
+            return x.GetType();
+        }
+
+        /// <summary>
         /// Prints 2-dimensional point coordinates.
         /// </summary>
         public void Print()
         {
-            Console.WriteLine("(x,y: {0},{1})", x, y);
+            Console.WriteLine("(x,y: {0},{1})", this.x, this.y);
         }
     }
 }

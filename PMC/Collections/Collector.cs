@@ -2,17 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PMC
+namespace PMC.Collections
 {
     /// <summary>
     /// Generic abstract class of collection
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <seealso cref="System.Collections.Generic.ICollection{T}" />
-    public abstract class Collector<T>: ICollection<T>
+    public abstract class Collector<T> : ICollection<T>
     {
         protected List<T> collector;
         private bool isReadOnly;
@@ -22,7 +20,30 @@ namespace PMC
         /// </summary>
         public Collector()
         {
-            collector = new List<T>();
+            //this.collector = new List<T>();
+            this.Create();
+        }
+
+        /// <summary>
+        /// Gets the number of elements contained in the interface <see cref="T:System.Collections.Generic.ICollection`1" />.
+        /// </summary>
+        public int Count
+        {
+            get
+            {
+                return this.collector.Count;
+            }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether the <see cref = "T: System.Collections.Generic.ICollection`1" /> is available for read-only.
+        /// </summary>
+        public bool IsReadOnly
+        {
+            get
+            {
+                return this.isReadOnly;
+            }
         }
 
         /// <summary>
@@ -34,8 +55,8 @@ namespace PMC
         /// <param name="index">Index.</param>
         public T this[int index]
         {
-            get { return collector[index]; }
-            set { collector[index] = value; }
+            get { return this.collector[index]; }
+            set { this.collector[index] = value; }
         }
 
         /// <summary>
@@ -44,12 +65,14 @@ namespace PMC
         /// <param name="item">Object to add into collection <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
         public abstract void Add(T item);
 
+        public abstract void Create();
+
         /// <summary>
         /// Deletes all elements from collection <see cref="T:System.Collections.Generic.ICollection`1" />.
         /// </summary>
         public void Clear()
         {
-            collector.Clear();
+            this.collector.Clear();
         }
 
         /// <summary>
@@ -61,7 +84,7 @@ namespace PMC
         /// </returns>
         public bool Contains(T item)
         {
-            return collector.Contains(item);
+            return this.collector.Contains(item);
         }
 
         /// <summary>
@@ -71,7 +94,7 @@ namespace PMC
         /// <param name="arrayIndex">Index that counts from zero into <paramref name="array" />showing begin of copy.</param>
         public void CopyTo(T[] array, int arrayIndex)
         {
-            collector.CopyTo(array, arrayIndex);
+            this.collector.CopyTo(array, arrayIndex);
         }
 
         /// <summary>
@@ -82,7 +105,7 @@ namespace PMC
         /// </returns>
         public IEnumerator<T> GetEnumerator()
         {
-            return collector.GetEnumerator();
+            return this.collector.GetEnumerator();
         }
 
         /// <summary>
@@ -94,7 +117,7 @@ namespace PMC
         /// </returns>
         public bool Remove(T item)
         {
-            return collector.Remove(item);
+            return this.collector.Remove(item);
         }
 
         /// <summary>
@@ -105,29 +128,7 @@ namespace PMC
         /// </returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return collector.GetEnumerator();
-        }
-
-        /// <summary>
-        /// Gets the number of elements contained in the interface <see cref="T:System.Collections.Generic.ICollection`1" />.
-        /// </summary>
-        public int Count
-        {
-            get
-            {
-                return collector.Count;
-            }
-        }
-
-        /// <summary>
-        /// Gets a value indicating whether the <see cref = "T: System.Collections.Generic.ICollection`1" /> is available for read-only.
-        /// </summary>
-        public bool IsReadOnly
-        {
-            get
-            {
-                return isReadOnly;
-            }
+            return this.collector.GetEnumerator();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PMC;
 using PMC.PointModels;
+using PMC.Collections;
 
 namespace UnitTestsPMC
 {
@@ -24,6 +24,7 @@ namespace UnitTestsPMC
                 {
                     position.Add(new Point2D<int>(i,j));
                 }
+
                 matrix.Add(position);
             }
         }

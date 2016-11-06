@@ -11,7 +11,7 @@ namespace PMC.PointModels
     /// </summary>
     /// <typeparam name="T">Takes any numerical types</typeparam>
     /// <seealso cref="PMC.IPoint" />
-    public class Point3D<T> : IPoint where T : struct, IComparable, IFormattable, IConvertible, IComparable<T>, IEquatable<T>
+    public class Point3D<T> : IPoint<T> where T : struct, IComparable, IFormattable, IConvertible, IComparable<T>, IEquatable<T>
     {
         private readonly T x;
 
@@ -53,11 +53,20 @@ namespace PMC.PointModels
         }
 
         /// <summary>
+        /// Returns type of coordinates
+        /// </summary>
+        /// <returns></returns>
+        public Type GenericType()
+        {
+            return x.GetType();
+        }
+
+        /// <summary>
         /// Prints 3-dimensional point coordinates.
         /// </summary>
         public void Print()
         {
-            Console.WriteLine("(x,y,z: {0},{1},{2})", x, y, z);
+            Console.WriteLine("(x,y,z: {0},{1},{2})", this.x, this.y, this.z);
         }
     }
 }

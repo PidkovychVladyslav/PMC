@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PMC;
 using PMC.PointModels;
+using PMC.Collections;
 
 namespace UnitTestsPMC
 {
@@ -52,13 +52,6 @@ namespace UnitTestsPMC
         public void DifferentPointsTest()
         {
             position.Add(new Point3D<int>(1, 1, 1));
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void WrongTypePointsTest()
-        {
-            position.Add(new Point2D<double>(1.0, 1.0));
         }
     }
 }
